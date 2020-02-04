@@ -56,3 +56,21 @@ section{
     color: #1d2d44;
     z-index: 3;
 }
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+}
+.projects h2 {
+    font-size: 40px;
+    color: #1d2d44;
+}
+.projects img {
+    max-width: 1000px;
+    max-height: 400px;
+}
+a {
+    text-decoration: none;
+
+}
