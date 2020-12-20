@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+    <title>Cart Page</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">23 ent.</label>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a> </li>
+            <li>
+                <a href="{% url 'home' %}">Events</a> </li>
+            <li>
+                <a href="{% url 'home' %}">Artists</a> </li>
+            <li>
+                <a href="{% url 'home' %}">Merch.</a> </li>
+            <li>
+                <a class="active" href="{% url 'home' %}">cart</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Cart section -->
+    <h1 id="cart">Your Booking Cart</h1>
+    <div class="sides">
+        <div class="left">
+
+            <div class="product">
+                <div class="image">
+                    <img src="smoke.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2 class="name">Nai fest</h2>
+                    <p class="date">10th Dec 2021</p>
+                </div>
+                <div class="quantity">
+                    <p class="quantity">Quantity: <span>10</span></p>
+                </div>
+                <div class="price">
+                    <p class="amount">amount: <span>Ksh 10,000</span></p>
+                </div>
+
+                <div class="remove">
+                    <p>x</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="glass.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2 class="name">Kenyatta half life</h2>
+                    <p class="date">22nd June 2021</p>
+                </div>
+                <div class="quantity">
+                    <p class="quantity">Quantity: <span>15</span></p>
+                </div>
+                <div class="price">
+                    <p class="amount">amount: <span>Ksh 5,000</span></p>
+                </div>
+
+                <div class="remove">
+                    <p>x</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="tikka.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2 class="name">Tikka made it!</h2>
+                    <p class="date">40th Jan 2021</p>
+                </div>
+                <div class="quantity">
+                    <p class="quantity">Quantity: <span>100</span></p>
+                </div>
+                <div class="price">
+                    <p class="amount">amount: <span>Ksh 100,000</span></p>
+                </div>
+
+                <div class="remove">
+                    <p>x</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right" id="rights">
+            <h1>Summary</h1>
+            <div class="summary-text">
+                <p>3 tickets</p>
+                <p>Total: $ 20,000</p>
+            </div>
+            <div class="twenty">
+                <img src="23-b.gif" alt="">
+            </div>
+            <div class="butt">
+                <a class="active" href="{% url 'home' %}">Shop more</a>
+                <a class="active" href="{% url 'home' %}">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <footer id="footers">
+        <div class="foot">
+            <img src="23-b.gif" alt="">
+            <div class="home-links">
+                <li class="link-head">Navigation</li>
+                <li>Home</li>
+                <li>Events</li>
+                <li>Artists</li>
+                <li>Merch.</li>
+            </div>
+            <div class="contact-links">
+                <li class="link-head">Contacts</li>
+                <li>Email</li>
+                <li>Mobile</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </div>
+            <div class="footer-links">
+                <li class="link-head">About us</li>
+                <li>The beginning</li>
+                <li>The middle</li>
+                <li>The end</li>
+                <li>..one more thing</li>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

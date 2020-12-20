@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background: #0082e6;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#cart {
+    padding: 20px;
+}
+
+.sides {
+    display: flex;
+}
+
+.sides .left {
+    width: 80%;
+}
+
+.sides .right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 100px;
+}
+
+.sides .right .twenty img {
+    max-width: 300px;
+    padding-right: 100px;
+}
+
+.product {
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.product .text,
+.price,
+.quantity,
+.remove {
+    position: relative;
+    align-self: center;
+}
+
+.remove {
+    color: red;
+    cursor: pointer;
+}
+
+.summary-text {
+    line-height: 50px;
+}
+
+.twenty {
+    max-width: 10px;
+}
+
+.butt a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    background: #0082e6;
+    margin-top: 50px;
+}
+
+footer .foot {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 10px;
+}
+
+footer img {
+    max-width: 100px;
+    align-self: flex-start;
+}
+
+footer .link-head {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+footer li {
+    font-size: 13px;
+    color: lightgrey;
+}
+
+footer .home-links,
+.contact-links,
+.footer-links {
+    position: relative;
+    justify-content: center;
+    line-height: 20px;
+}
